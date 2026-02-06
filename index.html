@@ -1,39 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Navegação e Astronomia</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <img src="#" alt="Img">
-            <ul id="navUl">
-                <li class="navLi"><a href="index.html" class="anchorList">Home</a></li>
-                <li class="navLi"><a href="#navegacao" class="anchorList">Navegação</a></li>
-                <li class="navLi"><a href="#astronomia" class="anchorList">Astronomia</a></li>
-                <li class="navLi"><a href="#conclusoes" class="anchorList">Conclusões</a></li>
-            </ul>
-        </nav>
+      <nav class="navPosition">
+        <img src="#" alt="Logo" id="logo" />
+
+        <img
+          src="/imgs/burger-menu-svgrepo-com.svg"
+          alt="hamburguer_menu"
+          id="burgerMenu"
+          class="hidden_media"
+          onclick="menuButton()"
+        />
+
+        <img
+          src="/imgs/icons8-close-50.png"
+          alt="closeOption"
+          id="closeOption"
+          class="hidden"
+          onclick="menuButton()"
+        />
+
+        <ul id="nav_ul" class="nav_ul">
+          <li class="paths"><a href="index.html">Home</a></li>
+          <li class="paths"><a href="#us">Nós</a></li>
+          <li class="paths"><a href="#navegacoes">Navegações</a></li>
+          <li class="paths"><a href="#astronomia">Astronomia</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="welcome">
-            <h1>BEM VINDOS</h1>
-            <ul id="people">
-                <li><img src="" alt="Miguel" srcset=""><span></span></img></li>
-                <li><img src="" alt="Lucas" srcset=""><span></span></img></li>
-                <li><img src="" alt="Victor" srcset=""><span></span></img></li>
-                <li><img src="" alt="Christian" srcset=""><span></span></img></li>
-            </ul>
-        </section>
-        <section id="navegacao"></section>
-        <section id="astronomia"></section>
-        <section id="conclusoes"></section>
+      <section id="us">
+        <div class="photos">
+          <img src="" alt="Christian Bryan" />
+          <figcaption>Christian Bryan (Dev do Site)</figcaption>
+          <img src="" alt="Victor Hugo" />
+          <figcaption>Victor Hugo (Introdução ao Tema)</figcaption>
+          <img src="" alt="Lucas Gustavo" />
+          <figcaption>Lucas Gustavo (Navegação)</figcaption>
+          <img src="" alt="Miguel Correa" />
+          <figcaption>Miguel Correa (Astronomia)</figcaption>
+        </div>
+      </section>
+      <section id="navegacoes">
+        <div class="text">
+          <span
+            >A astronomia e a navegação são disciplinas irmãs unidas pela
+            necessidade de orientação. Antes da tecnologia moderna, o céu era o
+            único mapa estável disponível</span
+          >
+          <span>
+            Navegar significava interpretar o cosmos para sobreviver e descobrir
+            novos mundos, transformando a observação das estrelas na base da
+            geolocalização atual.</span
+          >
+        </div>
+        <h2>Navegações</h2>
+        <div class="navImg">
+          <img
+            src="imgs/{A637B274-0BC5-48DF-A2D5-21BE3DF64701}.png"
+            alt=""
+            class="navImg"
+          />
+        </div>
+        <div class="esfera">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/58/Ast_esfera.png"
+            alt=""
+            class="esferaCeleste"
+          />
+        </div>
+      </section>
+      <section id="astronomia"></section>
     </main>
-</body>
-
+    <script src="js/index.js"></script>
+  </body>
 </html>
