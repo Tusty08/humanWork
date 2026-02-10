@@ -11,12 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 7rem;
 }
 
 .photos {
   display: grid;
   grid-template-columns: auto auto;
   gap: 2rem;
+  align-items: center;
 }
 
 .photos img {
@@ -27,6 +29,9 @@
   transform: translateY(-5px);
   transform: scale(2);
   margin-right: 2rem;
+  border: 2px solid rgb(139, 5, 5);
+  border-top-color: rgb(247, 247, 247);
+  border-bottom-color: rgb(0, 0, 0);
 }
 
 /** navegacoes */
@@ -334,3 +339,13 @@ hr {
   color: white;
   margin: 1rem;
 }
+
+.photos img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid black;
+  border-top-color: brown;
+  border-bottom-color: blue;
+}
+
